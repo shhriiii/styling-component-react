@@ -12,6 +12,13 @@ export default function AuthInputs() {
       setEnteredPassword(value);
     }
   }
+  function handleLog(identifier, value) {
+    if (identifier === 'email') {
+      setEnteredEmail(value);
+    } else {
+      setEnteredPassword(value);
+    }
+  }
 
   function handleLogin() {
     setSubmitted(true);
